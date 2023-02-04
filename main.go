@@ -8,5 +8,6 @@ use fmt package to print out string
 func main() {
 	//var | name | type
 	cards := newDeckFromFile("my_cards")
+	cards.shuffle()
 	cards.print()
 }
