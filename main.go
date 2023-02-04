@@ -7,8 +7,6 @@ use fmt package to print out string
 */
 func main() {
 	//var | name | type
-	cards := newDeck()
-
-	cards.saveToFile("my_cards")
-
+	cards := newDeckFromFile("my_cards")
+	cards.print()
 }
