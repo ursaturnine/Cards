@@ -33,3 +33,10 @@ func newDeck() deck {
 
 	return cards
 }
+
+// Create a 'hand' of cards
+// takes arguments d, a deck, and handSize, an int
+// two values of type deck returned
+func deal(d deck, handSize int) (deck, deck) {
+	return d[:handSize], d[handSize:]
+}
