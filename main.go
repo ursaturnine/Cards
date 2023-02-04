@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /*
 	Create a variable and assign it a string that represents a playing card.
 
@@ -11,6 +9,6 @@ func main() {
 	//var | name | type
 	cards := newDeck()
 
-	fmt.Println(cards.toString())
+	cards.saveToFile("my_cards")
 
 }
