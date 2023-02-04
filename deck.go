@@ -32,9 +32,9 @@ func newDeck() deck {
 	cardValues := []string{"Ace", "Two", "Three", "Four"}
 
 	// Each suit gets each number
-	for _, suit := range cardSuits {
-		for _, value := range cardValues {
-			cards = append(cards, suit+" of "+value)
+	for _, value := range cardValues {
+		for _, suit := range cardSuits {
+			cards = append(cards, value+" of "+suit)
 		}
 	}
 
